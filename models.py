@@ -13,7 +13,7 @@ class User(db.Model):
 
 def __init__(self, firstname, lastname, email, password):
     self.firstname = firstname.title()
-    self.lasname = lastname.title()
+    self.lastname = lastname.title()
     self.email = email.lower()
     self.set_password(password)
 
